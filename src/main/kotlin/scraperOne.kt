@@ -38,8 +38,7 @@ class ScraperOne {
             //insert the map into a list of hashmaps
             arrayOfMap.add(map)
         }
-
-
+        
         File("somefile.txt").printWriter().use { out ->
             arrayOfMap.forEach {
                 out.println(it["hello"])
