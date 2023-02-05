@@ -34,8 +34,6 @@ class ScraperOne {
             val href = it.getElementsByTag("a").attr("href")
             val title = it.getElementsByTag("a").attr("title")
 
-            println("$title")
-
             map["hello"] = title
             //insert the map into a list of hashmaps
             arrayOfMap.add(map)
